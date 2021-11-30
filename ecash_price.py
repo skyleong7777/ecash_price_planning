@@ -33,11 +33,11 @@ hide_st_style = """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 #---- layout of title----
-col1,col2,col3=st.columns(3)
-with col2:
-    st.markdown('## :star: Ecash price planning')
-    image=Image.open('planning.jpg')
-    st.image(image)
+#col1,col2,col3=st.columns(3)
+#with col2:
+    #st.markdown('## :star: Ecash price planning')
+    #image=Image.open('planning.jpg')
+    #st.image(image)
 
 
 # ----upload ecash file and slot rating file----
