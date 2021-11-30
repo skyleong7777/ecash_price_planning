@@ -8,7 +8,7 @@ Created on Wed Nov 17 16:29:57 2021
 #----import package----
 import streamlit as st
 import pandas as pd
-import numpy as np
+#import numpy as np
 from PIL import Image
 import plotly.express as px
 import seaborn as sns
@@ -158,7 +158,7 @@ if upload_sr is not None:
     e_plt2=e_plt.groupby('Acct')[['AwardUsed']].sum().reset_index()
     sr_plt=pd.merge(left=df_sr1,right=e_plt2,on='Acct', how='outer')
     if st.checkbox('The statistics performance of slot rating and ecash_point'):
-        st.write(sr_plt.describe(exclude=np.object))
+        st.write(sr_plt.describe())
     if st.checkbox('The correlation of slot rating and ecash_point'):
         col9,col10=st.columns(2) 
         fig2, ax=plt.subplots()
