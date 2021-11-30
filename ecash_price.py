@@ -36,7 +36,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 col1,col2,col3=st.columns(3)
 with col2:
     st.markdown('## :star: Ecash price planning')
-    image=Image.open('D:\Drive_F\Python\python\player_segmentation\ecash_price\planning.jpg')
+    image=Image.open('planning.jpg')
     st.image(image)
 
 
